@@ -8,7 +8,7 @@ One unified CV in English and German, plus an English DFG-style CV based on the 
 | `german/` | Matching German CV with portrait | [German CV](german/CV_AliKhalifa.pdf) |
 | `dfg/` | English proposal CV following the supplied DFG-style structure | [DFG-style CV](dfg/CV_AliKhalifa.pdf) |
 | `shared/` | Common facts, dates, portrait, publications, layout, and bilingual narrative | — |
-| `dfg/template/` | Original supplied ODT template, retained for reference | — |
+| `dfg/template/` | Template provenance note | — |
 
 ## Build
 
@@ -40,7 +40,7 @@ The script runs pdfLaTeX twice in each folder, updates the three PDFs, and stops
 - The DFG role is Co-PI: funding for a HiWi position supervised at TUM, with contribution to PhD supervision in Hamburg. No total grant amount or sole doctoral-supervisor claim is inferred.
 - The dissertation award is described as co-recipient, as stated in the supplied DFG CV.
 - Existing student leadership activities remain in the unified CVs. No separate academic/general variants are maintained.
-- The DFG source uses the supplied ODT as a structural reference and updates its outdated position and publication list. It is not a certification of compliance with the latest DFG form. The original ODT remains unchanged.
+- The DFG source uses the supplied ODT as a structural reference and updates its outdated position and publication list. It is not a certification of compliance with the latest DFG form. The original ODT remains unchanged and is not published in this repository.
 - The generated DFG consent box is deliberately unselected. Review the consent text and the relevant application form before submitting; this CV is not submitted by the build process.
 
 The portrait and CVs contain personal information and are included at the owner's request.

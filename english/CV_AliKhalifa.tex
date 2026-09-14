@@ -1,0 +1,23 @@
+% Build from this directory: pdflatex CV_AliKhalifa.tex (twice).
+% Prefer ../build.sh to rebuild all versions together.
+\documentclass[10pt,a4paper]{article}
+\newcommand{\CVLabel}{Academic CV}\newcommand{\CVTagline}{Computational multiphase flows | Particle processes | Machine learning}\newcommand{\CVInstitution}{Technical University of Munich, Freising, Germany}\newcommand{\CVNationality}{Nationality: German / Jordanian}
+\input{../shared/facts.tex}
+\input{../shared/style.tex}
+\begin{document}
+\input{../shared/header.tex}
+\input{../shared/english.tex}
+\newpage
+\section{Publications}
+\textbf{Peer-reviewed journal articles}\hfill 10 articles; 8 as first author
+\begingroup\small
+\begin{enumerate}[leftmargin=1.9em,label=\arabic*.,itemsep=6pt,topsep=5pt]
+\input{../shared/journals.tex}
+\end{enumerate}
+\vspace{4pt}
+\textbf{Peer-reviewed conference proceedings}
+\begin{enumerate}[leftmargin=1.9em,label=\arabic*.,itemsep=6pt,topsep=5pt]
+\input{../shared/proceedings.tex}
+\end{enumerate}
+\endgroup
+\end{document}

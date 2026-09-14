@@ -1,0 +1,22 @@
+% Compile twice with: pdflatex CV_AliKhalifa.tex
+% Standard TeX Live packages; no custom class, external fonts or image assets.
+
+\usepackage[margin=1.7cm,top=1.6cm,bottom=1.7cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,microtype,xcolor,enumitem,titlesec,fancyhdr,lastpage,graphicx}
+\usepackage[colorlinks=true,urlcolor=accent,linkcolor=accent]{hyperref}
+\definecolor{accent}{HTML}{184E64}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\vspace{-4pt}\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{6pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyfoot[L]{\footnotesize\color{accent}Ali Khalifa | \CVLabel}
+\fancyfoot[R]{\footnotesize\thepage\ / \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\entry}[3]{\textbf{#1}\hfill{\small #2}\\#3\par\vspace{3pt}}
+\newcommand{\link}[2][]{\href{#2}{#1}}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=2pt}
+\hypersetup{pdftitle={\CVLabel - Dr.-Ing. Ali Khalifa},pdfauthor={Ali Khalifa}}

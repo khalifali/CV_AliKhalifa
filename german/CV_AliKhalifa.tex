@@ -1,0 +1,23 @@
+% Build from this directory: pdflatex CV_AliKhalifa.tex (twice).
+% Prefer ../build.sh to rebuild all versions together.
+\documentclass[10pt,a4paper]{article}
+\newcommand{\CVLabel}{Akademischer Lebenslauf}\newcommand{\CVTagline}{Numerische Mehrphasenströmungen | Partikelprozesse | Maschinelles Lernen}\newcommand{\CVInstitution}{Technische Universität München, Freising, Deutschland}\newcommand{\CVNationality}{Staatsangehörigkeit: deutsch / jordanisch}
+\input{../shared/facts.tex}
+\input{../shared/style.tex}
+\begin{document}
+\input{../shared/header.tex}
+\input{../shared/german.tex}
+\newpage
+\section{Publikationen}
+\textbf{Begutachtete Zeitschriftenartikel}\hfill 10 Artikel; 8 als Erstautor
+\begingroup\small
+\begin{enumerate}[leftmargin=1.9em,label=\arabic*.,itemsep=6pt,topsep=5pt]
+\input{../shared/journals.tex}
+\end{enumerate}
+\vspace{4pt}
+\textbf{Begutachtete Konferenzbeiträge}
+\begin{enumerate}[leftmargin=1.9em,label=\arabic*.,itemsep=6pt,topsep=5pt]
+\input{../shared/proceedings.tex}
+\end{enumerate}
+\endgroup
+\end{document}
